@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String args[]) {
-        ejercicio1();
+        ejercicio1("banana");
         ejercicio2();
         ejercicio3();
         ejercicio4();
@@ -13,10 +13,32 @@ public class Main {
     }
 
     
-    public static void ejercicio1(){
-        // Tu código aquí
-    }
+    public static void ejercicio1(String producto){
+        int id = 121;
+        char categoria = A;
+        float precio = 0.78;
+        int stock = 3
+        boolean rebaja = false;
 
+            informacionProducto(id, categoria, precio, stock);
+            hayRebaja(rebaja);
+       
+    }
+        public static void informacionProducto(int id, char cat, float pr, int st) {
+             System.out.print("ID: " + id + "\n");
+            System.out.print("Categoria: " + cat + "\n");
+            System.out.print("Precio: " + pr + "\n");
+            System.out.print("Disponibles: " + st + "\n");
+        }
+
+        public static boolean hayRebaja(boolean rebaja){
+            if(rebaja == false){
+                System.out.println("No esta en rebaja");
+            }else{
+                System.out.println("Esta rebajado");
+            }
+        }
+    
     public static void ejercicio2(){
 
     }
