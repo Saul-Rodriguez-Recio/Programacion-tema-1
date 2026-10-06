@@ -1,5 +1,9 @@
+import java.util.Scanner;
+
+
 public class Main {
     public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
         ejercicio1("banana");
         ejercicio2("compra");
         ejercicio3("algo");
@@ -119,7 +123,7 @@ System.out.println(esBisiesto ? "El anyo es de siesta" : "El anyo no es de siest
     }
 
     public static void ejercicio8(string[] args){
-        System.out.print("MENU DE OPCIONES:\n 1.\t Archivo \"Nuevo\"\n 2.\tRuta: C:\\\\Archivos\\\\Java\n2.\tSalir");
+        System.out.print("MENU DE OPCIONES:\n 1. Archivo \"Nuevo\"\n 2. Ruta: C:\\\\Archivos\\\\Java\n3. Salir");
 
     }
 
@@ -127,7 +131,71 @@ System.out.println(esBisiesto ? "El anyo es de siesta" : "El anyo no es de siest
 
     }
 
-    public static void ejercicio10(){
+    public static void ejercicio10(Scanner sc){
+    
+        System.out.print("Introduce tu edad");
+        int edad = sc.nextInt();
+        System.ouy.print("Introduce tu salario: ");
+        float salario = sc.nextFloat();
+
+        if((edad < 25 && salario < 900) || edad < 18){
+            System.out.println("Se te concede la beca");
+        } else{
+            System.out.println("No se te concede la beca, burgues!");
+        }
+    }
+    
+    
+    public static void ejercicio11(Scanner sc){
+        System.out.print("introduce tu nota")
+        float nota = sc.nextFloat();
+
+
+        switch((int)nota) {
+            case 0, 1, 2, 3, 4,:
+                System.out.println("Insuficiente");
+                break;
+            case 5:
+                System.out.println("Suficiente");
+            case 6:
+                System.out.println("Bien");
+            case 7, 8:
+                System.out.println("Notable");
+            case 9, 10:
+                System.out.println("Sobresaliente");
+            default:
+                System.out.println("¿Que dices compi?");
+
+        }
+     }
+
+    public static void ejercicio12(Scanner sc){
+        System.out.print("Introduce la temperatura: ")
+        int temperatura = sc.nextInt()
+        String estado = temperatuta > 30 ? "calor" : "normal";
+        System.out.print(estado)
+
+
+
+    }
+
+    public static void ejercicio12(Scanner sc){
+        System.out.print("Introduce un numero de la semana del 1 al 7: ");
+        int dia =
+
+    }
+
+    public static void ejercicio12(Scanner sc){
+        
+
         
     }
+
+
+
+
+    
 }
+    
+
+
