@@ -109,11 +109,17 @@ System.out.println(esBisiesto ? "El anyo es de siesta" : "El anyo no es de siest
         
     }
 
-    public static void ejercicio7(){
+    public static void ejercicio7(string[] args){
+        System.out.printf("%-15s %5s %8s\n", "Nombre", "Unids", "Precio");
+        System.out.printf("%-15s %5d %8.2d\n", "Pipsas", 12, 4.50);
+        System.out.printf("%-15s %5d %8.2d\n", "Platanos", 3, 1.25);
+        System.out.printf("%-15s %5d %8.2d\n", "Agua fuji", 120, 19.99);
+        
 
     }
 
-    public static void ejercicio8(){
+    public static void ejercicio8(string[] args){
+        System.out.print("MENU DE OPCIONES:\n 1.\t Archivo \"Nuevo\"\n 2.\tRuta: C:\\\\Archivos\\\\Java\n2.\tSalir");
 
     }
 
