@@ -186,7 +186,49 @@ System.out.println(esBisiesto ? "El anyo es de siesta" : "El anyo no es de siest
     }
 
     public static void ejercicio12(Scanner sc){
-        
+       
+        System.out.println("Introduce un dia de la semana (sin tilde)");
+        String diaSemana = sc.nextLine();
+    System.out.println("Introduce tu edad");
+        int edad = sc.nextInt();
+    System.out.println("Tienes trajeta vip (S/N)");
+        String vip = sc.nextLine();
+    boolean esVip = (vip == "S" || vip == "s") ? true : false;
+    double precioFinal = 0;
+    int precioBase = 10;
+    double precioEdad = 0;
+
+    switch(diaSemana){
+        case "miercoles":
+            precioBase = 5;
+            break;
+        case "martes":
+            precioBase = 8;
+            break;
+        case "sabado", "domingo":
+            precioBase = 12;
+            break;
+        case "lunes", "jueves", "viernes":
+            precioBase = 10;
+            break;
+    }
+
+    if(edad < 12){
+        precioEdad = precioBase * 0.80;
+    }
+    if(edad >= 65){
+        precioEdad = precioBase * 0.70;
+    }
+    else{
+        precioEdad = precioBase;
+    }
+    if(esVip = true){
+        precioFinal = precioEdad * 0.90;
+    }
+    else{
+        precioFinal = precioEdad;
+    }
+    System.out.println("Esto vale tu entrada: " + precioFinal);
 
         
     }
